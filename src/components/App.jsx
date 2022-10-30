@@ -34,7 +34,7 @@ export const App = () => {
     setContacts(state => state.filter(person => person.id !== id));
   };
 
-  const filterContacts = contacts.filter(person =>
+  const filterContacts = () => contacts.filter(person =>
     person.name.toLowerCase().includes(filter.toLowerCase())
   );
 
